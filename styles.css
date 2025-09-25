@@ -19,19 +19,19 @@ button {
   padding: 12px 24px;
   border: none;
   border-radius: 5px;
-  background-color: #D0604C; /* A solid blue color */
+  background-color: #d0604c; /* A solid blue color */
   color: white; /* White text for contrast */
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
-button:hover{
-    background-color: #b23c47;
+button:hover {
+  background-color: #b23c47;
 }
-button:active{
-    transform: scale(1.1);
-    transition: ease-in ;
+button:active {
+  transform: scale(1.1);
+  transition: ease-in;
 }
 header > img {
   display: block;
@@ -39,19 +39,31 @@ header > img {
   margin-right: auto;
   width: 200px;
 }
+nav {
+  background-color: #d0604c;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  border-radius: 20px;
+}
 nav ul {
   list-style: none;
   text-align: center;
-  text-decoration: none;
 }
 nav li {
+  font-family: "Montserrat", sans-serif;
   display: inline-flex;
   justify-content: center;
-  padding-left: 10px;
+  padding-left: 30px;
 }
-main{
-    display: flex;
-    flex-direction: column;
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+main {
+  display: flex;
+  flex-direction: column;
 }
 .Promotion-banner {
   display: flex;
