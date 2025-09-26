@@ -9,12 +9,11 @@ h3 {
 p {
   font-family: "Montserrat", sans-serif;
 }
-body {
-  padding-right: 5%;
+/* body {
+  /* padding-right: 5%;
   padding-left: 5%;
   padding-top: 3rem;
-  padding-bottom: 3rem;
-}
+  padding-bottom: 3rem; }*/
 button {
   padding: 12px 24px;
   border: none;
@@ -45,6 +44,7 @@ nav {
   margin-bottom: 20px;
   font-size: 25px;
   border-radius: 20px;
+  height: 80px;
 }
 nav ul {
   list-style: none;
@@ -60,6 +60,12 @@ nav li a {
   text-decoration: none;
   color: white;
   font-weight: 600;
+}
+nav a:hover{
+  border-bottom: white solid;
+}
+nav a.active{
+  font-size: larger;
 }
 main {
   display: flex;
@@ -82,29 +88,31 @@ main {
   font-size: 35px;
 }
 .service-des {
-  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
   margin-top: 20px;
   text-align: center;
 }
 .service-cards {
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   flex-direction: row;
+  gap: 20px;
 }
 .Service-card {
   display: flex;
   flex-direction: column;
-  margin-left: 2%;
-  margin-right: 2%;
   padding: 20px;
   align-items: center;
-  width: 300px;
+  width: auto;
   border-radius: 20px;
   box-shadow: 0px 0px 2px black;
 }
 .Service-card img {
-  width: 300px;
+  max-width: 100%;
   border-radius: 20px;
 }
 .footer-nav {
